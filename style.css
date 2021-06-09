@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: arial,sans-serif;
+    line-height :1.7em;
+}
+a{
+    color: #333;
+    text-decoration:none;
+}
+
+h1, h2, h3, h4, h5{
+    padding-bottom: 20px;
+}
+
+p{
+    margin:10px 0;
+}
+
+.hotel__nav{
+    background-color: #333;
+    color:white;
+    /* position: fixed;
+    top:0;
+    z-index: 1; */
+    overflow: auto;
+}
+
+.hotel__nav a{
+    color:white;
+}
+
+.hotel__nav > h1{
+    float: left;
+    padding: 20px;
+}
+
+.hotel__nav h1 a:hover{
+    color:red;
+}
+
+.hotel__nav ul{
+    list-style: none;
+    float: right;
+}
+
+.hotel__nav ul li{
+    float:left;
+    /* padding: 20px; */
+}
+
+.hotel__nav ul li a{
+    color:yellowgreen;
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+}
+
+.hotel__nav ul li a:hover{
+    color:orange;
+    background-color: black;
+}
+
+.hotel__body{
+    background:
+    url('https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
+    no-repeat center center/cover
+    ;
+    padding:100px;
+    /* background-position: center; */
+    background-size: 1200px;
+    text-align: center;
+    /* background-repeat: no-repeat; */
+}
+
+.enjoy{
+    color:#EF6461;
+}
+
+.hotel__body p{
+    text-align: center;
+    color:#1C3144;
+}
+
+.hotel__body a{
+    color:black;
+    text-align: center;
+    padding:10px;
+    background-color: #E4B363;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hotel__body a:hover{
+    background-color: #333;
+    color:white;
+    font-size: 18px;
+}
+
+.hotel__section{
+    background-color: #333;
+}
+.section__right{
+    background-color: #333;
+    width:50%;
+    height:400px;
+    float:right;
+    text-align: center;
+    overflow: scroll;
+    padding:100px;
+}
+.history{
+    color: #E4B363;
+}
+.section__right p{
+    color:white;
+}
+
+.section__right a{
+    color: vlack;
+    background-color: #EF6461;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.section__right a:hover{
+    background-color: orangered;
+}
+
+.section__left{
+    height:400px;
+    background-image: url('https://images.pexels.com/photos/3887985/pexels-photo-3887985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    width: 50%;
+    background-position: center;
+    min-height:100%;
+    float:left;
+}
+
+.box{
+    float:left;
+    width:33.3%;
+    padding:50px;
+    text-align: center;
+}
+
+.table__footer{
+    /* background-color: #333; */
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .hotel__nav h1{
+        float: none;
+        text-align: center;
+    }
+
+    .hotel__nav ul,.hotel__nav ul li{
+        float:none;
+        text-align: center;
+    }
+
+    .box{
+        float:none;
+        width: 100%;
+        
+    }
+    .section__left{
+        display:none;
+    }
+    .section__right{
+        float: none;
+        width: 100%;
+    }
+}
